@@ -1,59 +1,422 @@
 <!DOCTYPE html>
-<html>
-
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="TrailCatch">
-<meta name="keywords" content="TrailCatch">
-<link rel="shortcut icon" href="logo.png" type="image/x-icon">
 
-<title>TrailCatch</title>
+<head>
+	<title>TrailCatch - The Ultimate App for Active People and Their Dogs</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<style>
-  body {
-    background-color: #231F20;
-    color: rgba(0, 0, 0, 0.87);
-    margin: 0;
-    padding: 0;
-  }
+	<meta name="description"
+		content="Welcome to TrailCatch! TrailCatch is the perfect app for anyone who loves outdoor activities and enjoys them with their furry friends. Whether you're walking, running, biking, or swimming, TrailCatch provides detailed analytics and a unique social experience to keep you motivated and engaged.">
+	<meta name="keywords"
+		content="TrailCatch, mobile app, outdoor activities, dogs, walking, running, biking, swimming, detailed analytics, social experience, leaderboards">
+	<link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
 
-  #main {
-    width: 400px;
-    height: 200px;
-    position: absolute;
-    top: 7%;
-    left: 7%;
-    font-size: 30px;
-    color: white;
-    font-weight: 300;
-    font-family: monospace;
-  }
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  .a1 {
-    position: absolute;
-    top: 17%;
-    left: 4%;
-    color: white;
-    font-weight: 300;
-    font-family: monospace;
-  }
-
-  .a2 {
-    position: absolute;
-    top: 17%;
-    left: 13%;
-    color: white;
-    font-weight: 300;
-    font-family: monospace;
-  }
-</style>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <b id="main">TrailCatch</b>
-  <a class="a1" href="/policy">Privacy Policy</a>
-  <a class="a2" href="/terms">Terms and Conditions</a>
+
+	<div id="tc-page">
+		<a href="#" class="js-tc-nav-toggle tc-nav-toggle"><i></i></a>
+		<aside id="tc-left-panel" role="complementary" class="tc-fullheight">
+			<h1 id="tc-logo" class="mb-4 mb-md-5">
+				<a href="index.html">
+					<img src="images/icon.png" />
+					TrailCatch
+				</a>
+			</h1>
+
+			<nav id="tc-main-menu" role="navigation">
+				<ul>
+					<li class="tc-active"><a href="index.html">Features</a></li>
+					<li><a href="pricing.html">Pricing</a></li>
+					<br />
+					<li><a href="how-it-works.html">How It Works</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<br />
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+
+
+			<div class="tc-footer">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<nav id="tc-main-menu" role="navigation">
+					<ul>
+						<a href="/"><img src="images/app_store.png" style="width: 150px;" /></a>
+						<br />
+						<br />
+						<li class="tc-sub"><a href="policy.html">Privacy Policy</a></li>
+						<li class="tc-sub"><a href="terms.html">Terms and Conditions</a></li>
+					</ul>
+				</nav>
+
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p class="tc-footer">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> Ihar Petushkou.
+				</p>
+			</div>
+		</aside>
+
+		<div id="tc-main">
+			<section class="f-tc-section f-tc-no-pt f-tc-no-pb">
+				<div class="container px-md-0">
+					<div class="row d-flex no-gutters">
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-12 img d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_welcome.jpg); height: 200px !important;">
+								</div>
+								<div class="col-md-12">
+									<div class="text pt-5 pl-0 px-lg-5 pl-md-4 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc">
+												<div class="top">
+													<h2 class="mb-4">Welcome to TrailCatch!
+													</h2>
+												</div>
+												<div class="absolute">
+													<p>TrailCatch is the perfect app for anyone who loves outdoor
+														activities and enjoys them with their furry friends. Whether
+														you're walking, running or biking, the app
+														provides detailed analytics and a unique social experience to
+														keep you motivated and engaged.
+													</p>
+													<p>
+														TrailCatch is more than just an app; it's a comprehensive
+														companion designed for both you and your dogs. TrailCatch is
+														your
+														ultimate
+														companion for walking, running or biking adventures. With
+														user-friendly features, detailed analytics, leaderboards, and a
+														points system,
+														the app makes your trail more enjoyable and engaging.
+													</p>
+													<p>
+														Download TrailCatch on the App Store and start your journey of
+														adventure and fun with your
+														best
+														friend
+														by your side!
+													</p>
+													<p style="text-align: left;">
+														<a href="/"><img src="images/app_store.png"
+																style="width: 150px;" /></a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 order-md-last img tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feeds.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 px-md-5 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc text-md-right">
+												<div class="top">
+													<span class="subheading">Key Feature</span>
+													<h2 class="mb-4">Friends Feeds</h2>
+												</div>
+												<div class="absolute">
+													<p>The Friends Feed page on TrailCatch keeps you connected and
+														inspired by showcasing the latest activities of your friends</p>
+													<p>
+														Interactive Posts: Like posts to engage with your friends and to
+														stay connected and motivate each other.
+													</p>
+													<p>
+														Customizable Feed: Filter and customize your feed to see the
+														activities that matter most to you, whether it’s specific types
+														of activities or updates from your closest friends.
+
+													</p>
+													<p>
+														Shared Insights: View detailed stats and maps of their
+														activities, providing you with insights and inspiration for your
+														own adventures.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feeds.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 px-md-5 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc text-md-right">
+												<div class="top">
+													<span class="subheading">Key Feature</span>
+													<h2 class="mb-4"><a href="single.html">Advanced Filters</a></h2>
+												</div>
+												<div class="absolute">
+													<p>TrailCatch offers a robust filtering system to help you find the
+														perfect friend's trails and activities. Customize your search
+														using the following filters:</p>
+													<p>
+														Type of Trail: Easily find trails suited for walking, running or
+														biking, or dog-friendly adventures.
+													</p>
+													<p>
+														Gender: Discover activities and trails popular among specific
+														gender groups.
+													</p>
+													<p>
+														Age Group: Filter trails and activities based on different age
+														groups to match your preferences.
+													</p>
+													<p>
+														Dog Breed: Locate trails frequented by specific dog breeds,
+														ensuring a great experience for you and your furry friend.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img order-md-last tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feature_2+app.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 pl-0 px-lg-5 pl-md-4 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc">
+												<div class="top">
+													<span class="subheading">Key Feature</span>
+													<h2 class="mb-4"><a href="gallery.html">Map Discover</a>
+													</h2>
+												</div>
+												<div class="absolute">
+													<p>TrailCatch’s interactive map makes discovering new trails a
+														breeze. You can effortlessly explore and locate nearby trails
+														used by both friends and other TrailCatch users. You can find
+														the perfect trail to suit your activity needs and join others in
+														their favorite spots.
+													</p>
+													<p>You can easily filter and zoom in on trails that match your
+														preferences, see detailed trail information, and get inspired to
+														explore new paths and connect with fellow adventurers.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feature_1+app.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 px-md-5 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc text-md-right">
+												<div class="top">
+													<span class="subheading">Key Feature</span>
+													<h2 class="mb-4"><a href="single.html">Activity
+															Monitoring</a></h2>
+												</div>
+												<div class="absolute">
+													<p>Walk, Run, Bike: Accurately monitor your distance, elevation,
+														duration, speed/pace and hearth rate data for various
+														activities.
+														TrailCatch helps you monitor your progress and advance your
+														performance.</p>
+													<p>
+														View your activity data through intuitive and interactive
+														charts. Analyze your results over time, compare different
+														activities, and identify trends to enhance your experience and
+														impressions
+														of outdoor activities.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img order-md-last tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feature_3+app.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 pl-0 px-lg-5 pl-md-4 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc">
+												<div class="top">
+													<span class="subheading">Key Feature 3</span>
+													<h2 class="mb-4"><a href="gallery.html">Device Data Sync</a>
+													</h2>
+												</div>
+												<div class="absolute">
+													<p>Apple Health, Garmin, Suunto, Poland and others integration: Sync
+														your health and
+														activity data from your favourite devices
+														seamlessly, ensuring all your information is consolidated in one
+														place.</p>
+													<p>
+														TrailCatch offers a streamlined experience for managing your
+														activity data. Easily sync new recorded data from
+														your devices with just a few taps. Whether you're connecting a
+														new device or updating your existing data, TrailCatch ensures a
+														smooth and hassle-free process, keeping your information current
+														and accurate.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feature_4+app.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 pl-0 px-lg-5 pl-md-4 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc">
+												<div class="top">
+													<span class="subheading">Key Feature 4</span>
+													<h2 class="mb-4"><a href="gallery.html">Leaderboards
+														</a>
+													</h2>
+												</div>
+												<div class="absolute">
+													<p>Country-Based Leaderboards: Compete with users from around the
+														world and see how you rank in your country. The leaderboards add
+														a fun and competitive element to your activities.</p>
+													<p>Points for Activities: Earn points for every activity you
+														complete. The more activities you do, the more points you
+														accumulate. Accumulate points through your
+														activities to elevate your standing and showcase your dedication
+														and progress among fellow users of the TrailCatch community.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img order-md-last  tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feature_5+app.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 pl-0 px-lg-5 pl-md-4 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc">
+												<div class="top">
+													<span class="subheading">Key Feature 5</span>
+													<h2 class="mb-4"><a href="gallery.html">You & Your Dogs</a>
+													</h2>
+												</div>
+												<div class="absolute">
+													<p>Dog Profiles: Create profiles for your dogs to keep track of
+														their specific needs and activity patterns.</p>
+													<p>Dog-Friendly Routes: Discover and follow dog-friendly trails and
+														paths, making it easy for dog owners to find and enjoy new
+														adventures with their pets.</p>
+													<p>Dog Metrics: Monitor your dog's activity levels,
+														including distance walked, playtime, and more, ensuring your
+														furry friends stays healthy and active.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12 portfolio-wrap">
+							<div class="row no-gutters align-items-center">
+								<div class="col-md-6 img tc-fullheight_2 d-flex align-items-center justify-content-center"
+									style="background-image: url(images/index_feature_6+app.jpg);">
+								</div>
+								<div class="col-md-6">
+									<div class="text pt-5 pl-0 px-lg-5 pl-md-4 f-tc-animate">
+										<div class="px-4 px-lg-4">
+											<div class="desc">
+												<div class="top">
+													<span class="subheading">Key Feature 6</span>
+													<h2 class="mb-4"><a href="gallery.html">Community and Social
+														</a>
+													</h2>
+												</div>
+												<div class="absolute">
+													<p>Connect with Friends: Join the TrailCatch community to share your
+														achievements, follow your friends' activities, and motivate each
+														other.</p>
+													<p>Share on Social Media: Easily share your activity summaries and
+														charts on social media platforms to showcase your progress and
+														inspire others.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.7.1.slim.min.js"></script>
+	<script src="js/jquery-migrate-3.5.0.min.js"></script>/
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
