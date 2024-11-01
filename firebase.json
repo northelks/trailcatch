@@ -17,12 +17,16 @@
         "destination": "/policy.html"
       },
       {
-        "source": "/faq",
-        "destination": "/faq.html"
+        "source": "/how-it-works",
+        "destination": "/how-it-works.html"
       },
       {
-        "source": "/faq/account-delete",
-        "destination": "/account-delete.html"
+        "source": "/contacts",
+        "destination": "/contacts.html"
+      },
+      {
+        "source": "/faq",
+        "destination": "/faq.html"
       },
       {
         "source": "**",

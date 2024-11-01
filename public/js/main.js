@@ -13,9 +13,9 @@
 			$('.tc-fullheight_2').css('height', $(window).height() / 2);
 		});
 
-		$('.tc-fullheight_3').css('height', $(window).height() / 3);
+		$('.tc-fullheight_3').css('height', $(window).height() / 2.5);
 		$(window).resize(function(){
-			$('.tc-fullheight_3').css('height', $(window).height() / 3);
+			$('.tc-fullheight_3').css('height', $(window).height() / 2.5);
 		});
 
 	};
