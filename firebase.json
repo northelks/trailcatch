@@ -17,10 +17,6 @@
         "destination": "/policy.html"
       },
       {
-        "source": "/how-it-works",
-        "destination": "/how-it-works.html"
-      },
-      {
         "source": "/contacts",
         "destination": "/contacts.html"
       },

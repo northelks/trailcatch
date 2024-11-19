@@ -13431,3 +13431,69 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/* CODE */
+
+.just-code {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 14px;
+  outline: 1px dotted !important;
+}
+
+.just-code pre {
+  color: white !important;
+}
+
+.just-code pre .comm {
+  color: #f3c623 !important;
+}
+
+.comm {
+  color: #f3c623 !important;
+}
+
+.collapsible {
+  border: 0;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  outline: 1px dotted #a68d32 !important;
+  font-size: 15px;
+}
+
+.content {
+  display: none;
+}
+
+.collapsible:focus {
+  outline: 1px dotted #f3c623 !important;
+}
+
+.img-db {
+  height: 800px;
+  outline: 2px solid black !important;
+  border-radius: 8px;
+}
+
+.img-faq {
+  height: 350px;
+  outline: 2px solid black !important;
+  border-radius: 8px;
+}
+
+.img-inx {
+  height: 600px;
+  outline: 2px solid black !important;
+  border-radius: 8px;
+}
+
+.pp {
+  color: white !important;
+  font-weight: bold;
+}

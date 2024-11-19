@@ -2,7 +2,7 @@
 
 	"use strict";
 
-	var heights = function() {
+	const heights = function() {
 		$('.tc-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
 			$('.tc-fullheight').css('height', $(window).height());
@@ -21,11 +21,11 @@
 	};
 	heights();
 
-   var burgerMenu = function() {
+   const burgerMenu = function() {
 
 		$('.js-tc-nav-toggle').on('click', function(event){
 			event.preventDefault();
-			var $this = $(this);
+			const $this = $(this);
 
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
@@ -38,10 +38,10 @@
 	};
 	burgerMenu();
 
-	var mobileMenuOutsideClick = function() {
+	const mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#tc-left-panel, .js-tc-nav-toggle");
+	    const container = $("#tc-left-panel, .js-tc-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas') ) {
@@ -66,8 +66,8 @@
 	};
 	mobileMenuOutsideClick();
 
-	var contentWayPoint = function() {
-		var i = 0;
+	const contentWayPoint = function() {
+		let i = 0;
 		$('.f-tc-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('f-tc-animated') ) {
@@ -78,9 +78,9 @@
 				setTimeout(function(){
 
 					$('body .f-tc-animate.item-animate').each(function(k){
-						var el = $(this);
+						const el = $(this);
 						setTimeout( function () {
-							var effect = el.data('animate-effect');
+							const effect = el.data('animate-effect');
 							if ( effect === 'fadeIn') {
 								el.addClass('fadeIn f-tc-animated');
 							} else if ( effect === 'fadeInLeft') {
@@ -101,6 +101,22 @@
 		} , { offset: '95%' } );
 	};
 	contentWayPoint();
+
+
+	const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
 
 })(jQuery);
 
